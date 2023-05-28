@@ -227,7 +227,7 @@ textarea{
     transition: all .3s;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 968px) {
     .contenedor{
         width: auto;
         height: 960px;
