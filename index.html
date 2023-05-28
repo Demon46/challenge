@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Allura Challenge</title>
+</head>
+<body>
+    
+    <div class="contenedor">
+        <div class="logo">
+            <img src="./imgs/Vector.png" class="img" alt="logo">
+            <h1 class="titulo">encriptador de texto <span>by oscar reyes</span></h1>
+        </div>
+        <div class="mobile-principal">
+            <div class="entrada">
+                <textarea id="ingreso" class="ingreso" type="text" cols="40" rows="16" placeholder="Ingrese el texto aquí"></textarea>
+                <div class="botones">
+                    <div class="info">
+                        <div class="iso">
+                            <p>!</p>
+                        </div>
+                        <p><span>solo</span> minúsculas y sin acentos.</p>
+                    </div>
+                    <div class="botones-grupo">
+                        <button type="button" id="btn-enc" class="btn" onclick="encriptar()">encriptar</button>
+                        <button type="button" id="btn-des" class="btn" onclick="desencriptar()">desencriptar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="salida">
+                <img src="./imgs/Muneco.png" id="muneco" alt="muneco">
+                <h1 id="mensaje"><span>ningún</span> mensaje fue encontrado</h1>
+                <textarea id="texto" cols="80">Ingresa el texto que desees encriptar o desencriptar.</textarea>
+                <button id="copiar" type="button" name="boton" onclick="copiar()">copiar</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+
+</body>
+</html>
